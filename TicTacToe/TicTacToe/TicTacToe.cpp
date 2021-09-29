@@ -187,54 +187,46 @@ static bool getComputerMove(TicTacToe::Entry computer, TicTacToe::Entry human, T
 
 				if (t.board[0][0] == (char)computer && t.board[0][1] == (char)computer && t.board[0][2] == (char)computer)
 				{
-					//rowChoice = i;					colChoice = j;
 					return false;
 				}
 				// second col
 				else if (t.board[1][0] == (char)computer && t.board[1][1] == (char)computer && t.board[1][2] == (char)computer)
 				{
-					//rowChoice = i;					colChoice = j;
 					return false;
 				}
 				// third col
 				else if (t.board[2][0] == (char)computer && t.board[2][1] == (char)computer && t.board[2][2] == (char)computer)
 				{
-					//rowChoice = i;					colChoice = j;
 					return false;
 				}
 				// first row
 				else if (t.board[0][0] == (char)computer == t.board[1][0] == (char)computer == t.board[2][0] == (char)computer)
 				{
-					//rowChoice = i;					colChoice = j;
 					return false;
 				}
 				// second row
 				else if (t.board[0][1] == (char)computer && t.board[1][1] == (char)computer && t.board[2][1] == (char)computer)
 				{
-					//rowChoice = i;					colChoice = j;
 					return false;
 				}
 				// third row
 				else if (t.board[0][2] == (char)computer && t.board[1][2] == (char)computer && t.board[2][2] == (char)computer)
 				{
-					//rowChoice = i;					colChoice = j;
 					return false;
 				}
 				// diagonal 1
 				else if (t.board[0][0] == (char)computer && t.board[1][1] == (char)computer && t.board[2][2] == (char)computer)
 				{
-					//rowChoice = i;					colChoice = j;
 					return false;
 				}
 				// diagonal 2
 				else if (t.board[0][2] == (char)computer && t.board[1][1] == (char)computer && t.board[2][0] == (char)computer)
 				{
-					//rowChoice = i;					colChoice = j;
 					return false;
 				}
 				else {
 					t.board[i][j] = (char)orig;
-					cout << "checked for comp w!" << endl;
+					//cout << "checked for comp w!" << endl;
 				}
 			}
 		}
@@ -298,7 +290,7 @@ static bool getComputerMove(TicTacToe::Entry computer, TicTacToe::Entry human, T
 				}
 				else {
 					t.board[i][j] = (char)orig;
-					cout << "checked for player w!" << endl;
+					//cout << "checked for player w!" << endl;
 				}
 			}
 		}
